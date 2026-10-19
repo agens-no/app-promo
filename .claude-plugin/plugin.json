@@ -1,0 +1,18 @@
+{
+  "name": "app-promo",
+  "description": "Make polished vertical promo videos for iOS apps with Apple's real 3D iPhone, real simulator UI, motion graphics and generated sound, in Remotion.",
+  "version": "1.0.0",
+  "keywords": [
+    "ios",
+    "promo",
+    "video",
+    "remotion",
+    "marketing",
+    "simulator"
+  ],
+  "author": {
+    "name": "Agens"
+  },
+  "homepage": "https://github.com/agens-no/app-promo",
+  "license": "MIT"
+}

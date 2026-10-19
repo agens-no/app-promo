@@ -1,0 +1,31 @@
+{
+  "fps": 60,
+  "bpm": 120,
+  "dropStart": 8,
+  "dropStagger": 7.5,
+  "targetLand": 90,
+  "reveal": 150,
+  "revealEnd": 250,
+  "moves": [
+    300,
+    360,
+    420,
+    480
+  ],
+  "hitBase": 516,
+  "heroLift": 530,
+  "heroSlam": 570,
+  "sheetUp": 630,
+  "scorePop": 690,
+  "spinA": 780,
+  "cardLift": 840,
+  "spinB": 1020,
+  "spinC": 1190,
+  "tagline": 1520,
+  "end": 1770,
+  "shareCard": 700,
+  "fan": 870,
+  "modeTap": 1110,
+  "startTap": 1180,
+  "question": 1410
+}

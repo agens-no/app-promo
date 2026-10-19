@@ -1,0 +1,14 @@
+{
+  "name": "app-promo",
+  "description": "Promo videos for iOS apps, made from the real app.",
+  "owner": {
+    "name": "Agens"
+  },
+  "plugins": [
+    {
+      "name": "app-promo",
+      "source": "./",
+      "description": "Make polished vertical promo videos for iOS apps with Apple's real 3D iPhone, real simulator UI, motion graphics and generated sound, in Remotion."
+    }
+  ]
+}
