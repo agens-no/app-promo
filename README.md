@@ -49,13 +49,30 @@ As a Claude Code plugin:
 
 Then ask for a promo video for your app, or run `/app-promo`. The skill answers in the language you write in.
 
+## How it works
+
+The agent starts with a short interview and suggests a default for every question, so you can just answer "default":
+
+- **Length and format:** 20–60 s (default ~30 s), 9:16 vertical at 60 fps, optionally square or landscape
+- **Language** of the text in the video (the agent itself answers in the language you write in)
+- **Where it will be shown:** private sharing, social media or App Store preview
+- **How much 3D:** *none* (real recordings, focus zooms and the app's own transitions only), *subtle* (one hero moment), *medium* or *full* (UI elements lift out of the screen as solid 3D objects)
+- **Which 3–5 features** to show, and the app's hero element or moment
+- **The ending:** a logo built from the app's own elements, or the home screen with a slogan
+- **Music:** generated in code with its own sound palette per app (default, no licence needed), or your own track
+- **Phone colour** to match the app, and whether the agent may come up with the concept itself
+
+It then finds debug states or fixtures in your app, records and screenshots it in a dedicated simulator, builds the video on a beat sheet, generates the soundtrack, checks transitions frame by frame, and shows you the first seconds before finishing.
+
 ## Requirements
 
 - macOS on Apple silicon with Xcode and an iOS Simulator runtime
-- [baguette](https://tddworks.github.io/baguette/) (`brew install baguette`) for headless taps, UI trees, screenshots and the device models
+- [baguette](https://tddworks.github.io/baguette/) for headless taps, UI trees, screenshots and the device models
 - [Blender](https://www.blender.org/) to convert the iPhone model to GLB
 - Node 22 and [Remotion](https://www.remotion.dev/)
 - Python 3 with Pillow, and ffmpeg
+
+You don't have to set these up by hand. The agent checks the toolchain first, lists what is missing and offers to install it (Homebrew, nvm or pip). It only installs after you say yes.
 
 ## What's inside
 

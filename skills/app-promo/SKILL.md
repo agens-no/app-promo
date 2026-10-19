@@ -26,6 +26,23 @@ Ask these together (AskUserQuestion or one message). Suggest defaults so the use
 
 The answers mostly steer the concept, how much lifts out of the screen, tempo (bpm) and colours.
 
+## 0a. Preflight: check the toolchain
+
+Before building anything, check what is installed and report it in one short list. Offer to install what is missing, and install only after the user says yes (these are system changes). Skip anything already present.
+
+| Tool | Check | Install |
+|---|---|---|
+| Xcode + command line tools | `xcodebuild -version`, `xcode-select -p` | App Store (Xcode), then `xcode-select --install` |
+| iOS Simulator runtime with an iPhone 17 Pro device type | `xcrun simctl list runtimes`, `xcrun simctl list devicetypes \| grep "iPhone 17 Pro"` | Xcode → Settings → Components, or `xcodebuild -downloadPlatform iOS` |
+| baguette | `baguette --version` | `brew install baguette` |
+| Blender | `ls /Applications/Blender.app` | `brew install --cask blender` |
+| Node 22 | `node --version` | `nvm install 22` (or `brew install node@22`) |
+| ffmpeg | `ffmpeg -version` | `brew install ffmpeg` |
+| Python 3 + Pillow | `python3 -c "import PIL"` | `python3 -m pip install --user pillow` |
+| Homebrew (for the above) | `brew --version` | the official install script from brew.sh, run by the user |
+
+Then set up the Remotion project (`references/techniques.md#setup`) and convert the iPhone model once (step 6 below). Both are project-local and need no extra permission beyond working in the repo.
+
 ## 0b. Delivery folder (once per Mac)
 
 Finished videos are delivered to a fixed folder on the machine, not only the project's `out/`. The choice is stored per Mac in `~/.config/app-promo/destination` (one line, full path).

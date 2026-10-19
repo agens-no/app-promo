@@ -1,6 +1,6 @@
 # Techniques, limits and variables
 
-## Setup
+## Setup {#setup}
 
 ```bash
 # Remotion project (in the repo root, e.g. promo/; reuse it if it exists)
