@@ -13,16 +13,14 @@ The agent interviews you briefly (length, language, how much 3D, ending), reads 
 
 <table>
   <tr>
-    <td align="center" width="25%"><img src="docs/unblock-hook.gif" width="190" alt="Tiles drop onto a floating board, then the phone builds itself around it"></td>
-    <td align="center" width="25%"><img src="docs/unblock-hero.gif" width="190" alt="The hero tile lifts out of the screen and flies into the camera"></td>
-    <td align="center" width="25%"><img src="docs/unblock-logo.gif" width="190" alt="The logo assembles from 3D tiles"></td>
-    <td align="center" width="25%"><img src="docs/talljakt-cards.gif" width="190" alt="Real solution cards fan out behind the phone"></td>
+    <td align="center" width="33%"><img src="docs/unblock-hook.gif" width="240" alt="Tiles drop onto a floating board, then the phone builds itself around it"></td>
+    <td align="center" width="33%"><img src="docs/unblock-hero.gif" width="240" alt="The hero tile lifts out of the screen and flies into the camera"></td>
+    <td align="center" width="33%"><img src="docs/unblock-logo.gif" width="240" alt="The logo assembles from 3D tiles"></td>
   </tr>
   <tr>
     <td align="center"><sub><b>Hook and reveal</b><br>the phone builds around the app's own pieces</sub></td>
     <td align="center"><sub><b>Hero moment</b><br>one element lifts out of the screen</sub></td>
     <td align="center"><sub><b>Logo lockup</b><br>built from the app's elements</sub></td>
-    <td align="center"><sub><b>Content cards</b><br>the app's real cards beside the phone</sub></td>
   </tr>
 </table>
 
