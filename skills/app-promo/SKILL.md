@@ -17,7 +17,7 @@ Ask these together (AskUserQuestion or one message). Suggest defaults so the use
 2. **Format:** 9:16 vertical 1080×1920. Default 60 fps. Also 1:1 or 16:9?
 3. **Language of on-screen text.**
 4. **Use:** private sharing, social (Reels/TikTok, safe zones) or App Store preview. App Store previews must be real recordings, max 30 s, without invented 3D effects, so this method fits them poorly.
-5. **How much UI lifts out of the screen:** *subtle* (one or two hero moments), *medium* or *full* (everything lifts out). Default is **subtle to medium**. Full suits apps whose pieces are naturally physical objects (game tiles); for ordinary apps (lists, forms, cards), lift only 1–3 key elements and keep the rest on the screen.
+5. **How much UI lifts out of the screen:** *none* (low-key: real recordings, focus zooms and the app's own transitions only, see `examples/kjop`), *subtle* (one or two hero moments), *medium* or *full* (everything lifts out). Default is **subtle to medium**; *none* suits plain everyday apps (lists, forms, settings). Full suits apps whose pieces are naturally physical objects (game tiles); for ordinary apps (lists, forms, cards), lift only 1–3 key elements and keep the rest on the screen.
 6. **Creative freedom:** should the agent come up with the concept?
 7. **Music:** generated in code (default, no licence needed) or their own track? Give **each app its own sound palette** so two videos never sound alike (see `references/techniques.md#sound`).
 8. **Which features to show** (3–5), and what is the app's "hero" element or moment?
@@ -51,8 +51,8 @@ Finished videos are delivered to a fixed folder on the machine, not only the pro
 12. **Generate the soundtrack** (`tools/<app>_audio.mjs`, copied from an example) from the same timeline. Render, measure loudness (`ffmpeg -af ebur128`, aim for −14 to −16 LUFS) and open the file for the user.
 
 12b. **Consistency check (required before delivery).** A mismatch between what is on the phone screen and what is highlighted outside it looks like an AI artefact. Go through `references/consistency.md` and render contact sheets ±2 frames around every transition, screen change and lift.
-13. **Share text:** write a short text to paste wherever the video is shared, saved as `out/<app>-share.txt`. Format below.
-14. **Deliver:** copy the latest approved render to the delivery folder (0b) as `<App> promo.mp4`, with the share text as `<App> promo.txt` beside it. Overwrite the previous delivery for the same app; the version history (`-v2`, `-v3` …) stays in `out/`. Give the path of the delivered file in the reply.
+13. **Share text:** write a short text to paste wherever the video is shared (format below). Copy it to the clipboard (`pbcopy`) and show it in the reply in a code block. Don't save it as a file.
+14. **Deliver:** copy the latest approved render to the delivery folder (0b) as `<App> promo.mp4`. Overwrite the previous delivery for the same app; the version history (`-v2`, `-v3` …) stays in `out/`. Give the path of the delivered file in the reply.
 
 ### Share text format
 
@@ -132,3 +132,5 @@ Good references *use the screen and the content*, not just the layout. Plan at l
 - `examples/unblock/`: dark style, lots of 3D out of the screen, ends on a logo lockup
 - `examples/talljakt/`: light style, focus zooms, several cards, two phones, app elements as decor, ends on the home screen
 - `examples/quiz/`: one continuous simulator recording of a whole flow, speed ramps, speech bubbles, fast-forward, result and history, no spins
+- `examples/kjop/`: low-key: a plain shopping list, two recordings joined in a close-up, focus zooms and the app's own transitions only
+- `templates/tools/compare.py`: a raw-recording vs. promo side-by-side, frame for frame, for showing what the promo adds

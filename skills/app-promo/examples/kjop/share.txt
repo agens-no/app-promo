@@ -1,0 +1,7 @@
+*Kjøp – Skriv. Handle. Ferdig.*
+Handlelisten for hele husstanden, delt mellom alle telefonene.
+
+• Skriv varer med mengde, så havner de i riktig kategori
+• Start handletur og kryss av mens du går gjennom butikken
+• Rydd kjøpte varer i kurven, og se fremdriften underveis
+• Fullfør handelen, så ligger det som ble igjen klart til neste gang

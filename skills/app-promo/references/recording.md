@@ -16,9 +16,10 @@ Read this when the video should contain real app motion, or when simulator recor
 2. Launch without a debugger, Metal API/shader validation, GPU capture or a continuous log stream when the goal is clean promo footage. Turn those on in a separate diagnostic run if something fails.
 3. Use one known recording device and app build. Identify other active jobs; coordinate before stopping anything that isn't part of this task. Avoid Remotion/Blender renders, ffmpeg decoding, screen sharing and a second recorder at the same time.
 4. Lock language, appearance, orientation, status bar and keyboard state before recording. Check that Slow Animations is off.
-5. Prepare a specific question, answer or data set with an existing seed, deep link or fixture where possible. Find tap points and timing with `describe-ui` and screenshots now. Coordinates only apply to this layout and device. Rehearse the sequence before recording.
-6. Let textures, fonts and the first animation finish. Check visually that the right app is in front; a valid MP4 only proves that a display was recorded.
-7. Plan short takes, e.g. 5–15 s per action with some margin, or **one continuous take of the whole flow** when state must carry across screens (a quiz from first question to result and home). Use a predetermined sequence and a monotonic clock; don't let the agent's thinking pauses drive the footage. Long holds can be shortened later with knots in Remotion.
+5. Text fields: the simulator uses the Mac's hardware keyboard, so no iOS keyboard appears and a focused field may never lose focus (the "Done" button of a keyboard toolbar never shows). Find the focused layout in the rehearsal (the field may sit lower), and if the flow needs the field unfocused afterwards, end the take there and start the next take from a fixture with the typed item already in place; join the two takes in a close-up where both look identical.
+6. Prepare a specific question, answer or data set with an existing seed, deep link or fixture where possible. Find tap points and timing with `describe-ui` and screenshots now. Coordinates only apply to this layout and device. Rehearse the sequence before recording.
+7. Let textures, fonts and the first animation finish. Check visually that the right app is in front; a valid MP4 only proves that a display was recorded.
+8. Plan short takes, e.g. 5–15 s per action with some margin, or **one continuous take of the whole flow** when state must carry across screens (a quiz from first question to result and home). Use a predetermined sequence and a monotonic clock; don't let the agent's thinking pauses drive the footage. Long holds can be shortened later with knots in Remotion.
 
 ## 2. Recording: only the actions to be filmed
 

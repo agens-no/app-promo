@@ -11,14 +11,20 @@ The agent interviews you briefly (length, language, how much 3D, ending), reads 
 
 ## Showcase
 
-Short excerpts from two promos made with the skill (Unblock, a sliding-block puzzle, and Georama, a geography trainer):
+Short excerpts from promos made with the skill, from big and playful to quiet and low-key:
 
 | | | |
 |:-:|:-:|:-:|
 | <img src="docs/unblock-hook.gif" width="240" alt="Tiles drop onto a floating board, then the phone builds itself around it"> | <img src="docs/unblock-hero.gif" width="240" alt="The hero tile lifts out of the screen and flies into the camera"> | <img src="docs/unblock-logo.gif" width="240" alt="The logo assembles from 3D tiles"> |
 | **Hook and reveal:** the app's own pieces, then the phone builds around them | **Hero moment:** one element lifts out of the screen | **Logo lockup** built from the app's elements |
-| <img src="docs/georama-globe.gif" width="240" alt="A globe becomes the phone's screen"> | <img src="docs/georama-map.gif" width="240" alt="A real screen recording of pointing at a country on the map"> | <img src="docs/georama-flags.gif" width="240" alt="Flags burst out of the screen and settle into the app"> |
-| **Match cut:** the globe becomes the screen | **Real recording** with focus zooms on the beat | **Out of the screen:** the content bursts out and settles back |
+| <img src="docs/georama-globe.gif" width="240" alt="The 3D globe shrinks into the app's own globe on the home screen"> | <img src="docs/georama-map.gif" width="240" alt="A real screen recording of pointing at a country on the map"> | <img src="docs/talljakt-cards.gif" width="240" alt="Real solution cards fan out behind the phone"> |
+| **Reveal:** the 3D globe lands on the app's own globe | **Real recording:** the camera follows the app's own zoom to the answer | **Content cards:** the app's real solution cards fan out behind the phone |
+| <img src="docs/quiz-bubble.gif" width="240" alt="A spoken wrong answer in a speech bubble, the answer button tearing in slow motion, the bubble dropping onto Wrong"> | <img src="docs/kjop-done.gif" width="240" alt="The last item is ticked off and the camera moves in on the app's own finish animation"> | |
+| **Off-screen action:** a spoken answer as a speech bubble, the app's own button animation in slow motion | **Low-key:** a shopping list with nothing but focus zooms and the app's own transitions | |
+
+**Raw recording vs. promo.** The same simulator recording, frame for frame: the skill frames it in the real iPhone, moves the camera to what matters, and keeps the timing on the beat.
+
+<img src="docs/kjop-raw-vs-promo.gif" width="600" alt="Left: the raw simulator recording of typing an item into a shopping list. Right: the same frames in the promo, zoomed in on the field and then on the sorted list">
 
 Every video has its own generated soundtrack, synced to the same beat sheet as the picture.
 

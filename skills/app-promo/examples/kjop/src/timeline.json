@@ -1,0 +1,18 @@
+{
+  "fps": 60,
+  "bpm": 120,
+  "phoneIn": 0,
+  "type": 150,
+  "added": 300,
+  "handoff": 420,
+  "start": 480,
+  "ticks": 540,
+  "ticksEnd": 760,
+  "sweep": 800,
+  "tick7": 870,
+  "tick8": 930,
+  "done": 960,
+  "finish": 1110,
+  "tagline": 1170,
+  "end": 1410
+}
